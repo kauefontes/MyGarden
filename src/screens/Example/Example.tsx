@@ -54,37 +54,44 @@ const Example = () => {
     backgroundColor: isDark ? '#000000' : '#DFDFDF',
     borderRadius: 140,
   };
+
   const bottomLeftFigure: ImageStyle = {
     position: 'absolute',
     bottom: '-30%',
     left: 0,
   };
+
   const octopus: ViewStyle = {
     position: 'absolute',
     height: 300,
     width: 300,
     transform: [{ translateY: 40 }],
   };
+
   const topLeftFigure: ImageStyle = {
     position: 'absolute',
     top: 0,
     left: 0,
   };
+
   const pencilFigure: ImageStyle = {
     position: 'absolute',
     top: '-5%',
     right: 0,
   };
+
   const sparkleFigure: ImageStyle = {
     position: 'absolute',
     top: '15%',
     right: 20,
   };
+
   const middleRightPurpleFigure: ImageStyle = {
     position: 'absolute',
     bottom: '-10%',
     right: 0,
   };
+
   const bottomRightPurpleFigure: ImageStyle = {
     position: 'absolute',
     top: '75%',
@@ -94,6 +101,7 @@ const Example = () => {
   const footerIcons: ImageStyle = {
     tintColor: isDark ? '#A6A4F0' : '#44427D',
   };
+
   const tintBucketFigure: ImageStyle = {
     position: 'absolute',
     top: '60%',
