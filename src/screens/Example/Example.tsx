@@ -7,6 +7,8 @@ import {
   ScrollView,
   Image,
   Alert,
+  ImageStyle,
+  ViewStyle,
 } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { useTranslation } from 'react-i18next';
@@ -45,6 +47,59 @@ const Example = () => {
     i18next.changeLanguage(lang);
   };
 
+  const backgroundCircle: ViewStyle = {
+    position: 'absolute',
+    height: 250,
+    width: 250,
+    backgroundColor: isDark ? '#000000' : '#DFDFDF',
+    borderRadius: 140,
+  };
+  const bottomLeftFigure: ImageStyle = {
+    position: 'absolute',
+    bottom: '-30%',
+    left: 0,
+  };
+  const octopus: ViewStyle = {
+    position: 'absolute',
+    height: 300,
+    width: 300,
+    transform: [{ translateY: 40 }],
+  };
+  const topLeftFigure: ImageStyle = {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  };
+  const pencilFigure: ImageStyle = {
+    position: 'absolute',
+    top: '-5%',
+    right: 0,
+  };
+  const sparkleFigure: ImageStyle = {
+    position: 'absolute',
+    top: '15%',
+    right: 20,
+  };
+  const middleRightPurpleFigure: ImageStyle = {
+    position: 'absolute',
+    bottom: '-10%',
+    right: 0,
+  };
+  const bottomRightPurpleFigure: ImageStyle = {
+    position: 'absolute',
+    top: '75%',
+    right: 0,
+  };
+
+  const footerIcons: ImageStyle = {
+    tintColor: isDark ? '#A6A4F0' : '#44427D',
+  };
+  const tintBucketFigure: ImageStyle = {
+    position: 'absolute',
+    top: '60%',
+    right: 0,
+  };
+
   return (
     <ScrollView
       style={Layout.fill}
@@ -64,105 +119,43 @@ const Example = () => {
           Layout.alignItemsCenter,
         ]}
       >
-        <View
-          style={[
-            Layout.absolute,
-            {
-              height: 250,
-              width: 250,
-              backgroundColor: isDark ? '#000000' : '#DFDFDF',
-              borderRadius: 140,
-            },
-          ]}
-        />
+        <View style={backgroundCircle} />
         <Image
-          style={[
-            Layout.absolute,
-            {
-              bottom: '-30%',
-              left: 0,
-            },
-          ]}
+          style={bottomLeftFigure}
           source={Images.sparkles.bottomLeft}
           resizeMode={'contain'}
         />
-        <View
-          style={[
-            Layout.absolute,
-            {
-              height: 300,
-              width: 300,
-              transform: [{ translateY: 40 }],
-            },
-          ]}
-        >
+        <View style={octopus}>
           <Brand height={300} width={300} />
         </View>
         <Image
-          style={[
-            Layout.absolute,
-            Layout.fill,
-            {
-              top: 0,
-              left: 0,
-            },
-          ]}
+          style={topLeftFigure}
           source={Images.sparkles.topLeft}
           resizeMode={'contain'}
         />
         <Image
-          style={[
-            Layout.absolute,
-            {
-              top: '-5%',
-              right: 0,
-            },
-          ]}
+          style={pencilFigure}
           source={Images.sparkles.top}
           resizeMode={'contain'}
         />
         <Image
-          style={[
-            Layout.absolute,
-            {
-              top: '15%',
-              right: 20,
-            },
-          ]}
+          style={sparkleFigure}
           source={Images.sparkles.topRight}
           resizeMode={'contain'}
         />
         <Image
-          style={[
-            Layout.absolute,
-            {
-              bottom: '-10%',
-              right: 0,
-            },
-          ]}
+          style={middleRightPurpleFigure}
           source={Images.sparkles.right}
           resizeMode={'contain'}
         />
 
         <Image
-          style={[
-            Layout.absolute,
-            {
-              top: '75%',
-              right: 0,
-            },
-          ]}
+          style={bottomRightPurpleFigure}
           source={Images.sparkles.bottom}
           resizeMode={'contain'}
         />
         <Image
-          style={[
-            Layout.absolute,
-            {
-              top: '60%',
-              right: 0,
-            },
-          ]}
+          style={tintBucketFigure}
           source={Images.sparkles.bottomRight}
           resizeMode={'contain'}
         />
@@ -203,10 +196,7 @@ const Example = () => {
             {isFetching || isLoading ? (
               <ActivityIndicator />
             ) : (
-              <Image
-                source={Images.icons.send}
-                style={{ tintColor: isDark ? '#A6A4F0' : '#44427D' }}
-              />
+              <Image source={Images.icons.send} style={footerIcons} />
             )}
           </TouchableOpacity>
 
@@ -214,10 +204,7 @@ const Example = () => {
             style={[Common.button.circle, Gutters.regularBMargin]}
             onPress={() => onChangeTheme({ darkMode: !isDark })}
           >
-            <Image
-              source={Images.icons.colors}
-              style={{ tintColor: isDark ? '#A6A4F0' : '#44427D' }}
-            />
+            <Image source={Images.icons.colors} style={footerIcons} />
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -226,10 +213,7 @@ const Example = () => {
               onChangeLanguage(i18next.language === 'fr' ? 'en' : 'fr')
             }
           >
-            <Image
-              source={Images.icons.translate}
-              style={{ tintColor: isDark ? '#A6A4F0' : '#44427D' }}
-            />
+            <Image source={Images.icons.translate} style={footerIcons} />
           </TouchableOpacity>
         </View>
       </View>
