@@ -1,4 +1,4 @@
-package com.appdahorta;
+package com.mygarden;
 
 import android.app.Application;
 import com.facebook.react.PackageList;

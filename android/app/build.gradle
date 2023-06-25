@@ -93,9 +93,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.appdahorta"
+    namespace "com.mygarden"
     defaultConfig {
-        applicationId "com.appdahorta"
+        applicationId "com.mygarden"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

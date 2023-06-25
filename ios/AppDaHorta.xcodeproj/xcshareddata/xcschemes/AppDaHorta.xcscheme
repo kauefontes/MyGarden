@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AppDaHorta.app"
-               BlueprintName = "AppDaHorta"
-               ReferencedContainer = "container:AppDaHorta.xcodeproj">
+               BuildableName = "MyGarden.app"
+               BlueprintName = "MyGarden"
+               ReferencedContainer = "container:MyGarden.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "AppDaHortaTests.xctest"
-               BlueprintName = "AppDaHortaTests"
-               ReferencedContainer = "container:AppDaHorta.xcodeproj">
+               BuildableName = "MyGardenTests.xctest"
+               BlueprintName = "MyGardenTests"
+               ReferencedContainer = "container:MyGarden.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AppDaHorta.app"
-            BlueprintName = "AppDaHorta"
-            ReferencedContainer = "container:AppDaHorta.xcodeproj">
+            BuildableName = "MyGarden.app"
+            BlueprintName = "MyGarden"
+            ReferencedContainer = "container:MyGarden.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AppDaHorta.app"
-            BlueprintName = "AppDaHorta"
-            ReferencedContainer = "container:AppDaHorta.xcodeproj">
+            BuildableName = "MyGarden.app"
+            BlueprintName = "MyGarden"
+            ReferencedContainer = "container:MyGarden.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

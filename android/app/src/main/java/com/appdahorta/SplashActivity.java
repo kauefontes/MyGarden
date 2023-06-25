@@ -1,4 +1,4 @@
-package com.appdahorta;
+package com.mygarden;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
